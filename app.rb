@@ -5,7 +5,7 @@ class App < Sinatra::Base
   get '/name' do
     @name = Name.all
 
-    if req.path.match(/items/)
+    if req.path.match(/name/)
       @name.each do |name|
         resp.write "My name is #{item}\n"
       end
