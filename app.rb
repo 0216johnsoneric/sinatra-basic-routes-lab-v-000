@@ -7,7 +7,7 @@ class App < Sinatra::Base
 
     if req.path.match(/items/)
       @name.each do |name|
-        resp.write "#{item}\n"
+        resp.write "My name is"#{item}\n"
       end
 
     name each do
