@@ -10,8 +10,8 @@ class App < Sinatra::Base
         resp.write "My name is #{item}\n"
       end
 
-    name each do
-      get '/name'
+    # name each do
+    #   get '/name'
     # erb :'medicines/index.html.erb'
   end
 end
